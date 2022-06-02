@@ -16,7 +16,7 @@ public class TestApiController {
 
 	
 	@PostMapping("/hola")
-	public Response changeText(Request request) {
+	public Response changeText(@RequestBody Request request) {
 		return service.sayHello(request);
 	}	
 }
